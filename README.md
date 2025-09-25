@@ -134,7 +134,7 @@ Make sure to connect your GelSight Mini sensor (with a dotted gel), to your comp
 
 ```console
 $ cd src/feats/src/predict
-$ python3 predict.py --config predict_config.yaml
+$ python3 live.py --config predict_config.yaml
 ```
 
 Our latest model [`unet_09042025_124903_80.pt`](src/feats/models/unet_09042025_124903_80.pt) is trained on data collected with multiple GelSight Mini sensors and should be compatible with most GelSight Mini sensors. The corresponding normalization file is [`normalization_08042025_122519.npy`](src/feats/data/labels/normalization_08042025_122519.npy). We still keep the previous models for legacy purposes, but we highly recommend using the latest model for best results.
